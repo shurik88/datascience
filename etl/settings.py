@@ -1,6 +1,4 @@
-
+import json
 
 def get():
-    return { 
-"connectionString": "mongodb://localhost:27017/stackoverflow"
-}
+    return json.load(open('settings.json'))

@@ -9,3 +9,5 @@ class mongoRep:
         return self.db[self.colName].insert_one(doc).inserted_id
     def insert_many(self, docs):
         return self.db[self.colName].insert_many(docs).inserted_ids
+    def getCollection(self):
+        return self.db[self.colName]
